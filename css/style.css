@@ -309,6 +309,10 @@ nav li {
   float: right;
 }
 
+.section-main {
+  position: relative;
+}
+
 nav a#openup {
   display: none;
 }
@@ -342,6 +346,7 @@ nav a#openup {
 
   #showcase {
     height: 70vh;
+
   }
 
   #showcase .container {
@@ -371,7 +376,7 @@ nav a#openup {
   nav li {
     width: 100%;
     float: left;
-    position: relative;
+
   }
 
   nav a:after {
@@ -383,13 +388,16 @@ nav a#openup {
   }
 
 
+
   nav a#openup {
     transform: rotate(-90deg);
     display: inline-block;
-    position: absolute;
-
+    margin-left: 85%;
   }
 
+  nav a#openup:after {
+    margin: 5px;
+  }
 
   .cf:before,
   .cf:after {
@@ -399,8 +407,12 @@ nav a#openup {
 
   .cf:after {
     clear: both;
+
   }
 
   .cf {
     zoom: 1;
+    position: absolute;
+    z-index: 10;
+
   }
