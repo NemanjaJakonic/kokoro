@@ -318,6 +318,7 @@ nav a#openup {
     display: none;
   }
 
+
   .logo img {
     width: 15vw;
 
@@ -373,51 +374,33 @@ nav a#openup {
     position: relative;
   }
 
-  nav a {
-    text-align: left;
-    width: 100%;
-    text-indent: 25px;
-
+  nav a:after {
+    content: none;
   }
 
   nav a:hover {
     color: tomato;
   }
 
-  /* nav a#openup:after {
-    content: '|||';
-    transform: rotate(-90deg);
-    -ms-transform: rotate(-90deg);
-    
-    -webkit-transform: rotate(-90deg);
-    
-    width: 30px;
-    height: 30px;
-    display: inline-block;
-    position: absolute;
-    right: 5px;
-    top: 20px;
-  } 
-  */
 
   nav a#openup {
-    display: block;
+    transform: rotate(-90deg);
+    display: inline-block;
+    position: absolute;
 
-    width: 100%;
-    position: relative;
   }
-}
 
-.cf:before,
-.cf:after {
-  content: '';
-  display: table;
-}
 
-.cf:after {
-  clear: both;
-}
+  .cf:before,
+  .cf:after {
+    content: '';
+    display: table;
+  }
 
-.cf {
-  zoom: 1;
-}
+  .cf:after {
+    clear: both;
+  }
+
+  .cf {
+    zoom: 1;
+  }
